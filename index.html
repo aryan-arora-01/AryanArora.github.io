@@ -14,10 +14,9 @@
 
     <style type="text/css">
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: sans-serif; /* Set to a generic sans-serif font */
         }
         .name {
-            font-family: 'DM Serif Display', serif;
             font-size: 48px;
             text-align: center;
             margin-top: 20px;
@@ -26,8 +25,16 @@
             text-align: center;
             margin-bottom: 30px;
         }
+        .picture-container {
+            display: flex;
+            justify-content: center; /* Center the flex items */
+            align-items: center; /* Center vertically (if needed) */
+            margin-bottom: 30px;
+        }
         img {
             max-width: 400px;
+            display: block; /* Ensures that the image behaves as a block element */
+            margin: 0 auto; /* Center the image */
         }
         .intro p {
             text-align: justify;
@@ -47,17 +54,10 @@
 
         <div class="picture-container">
             <picture>
-                <source srcset="https://sahilchinoy-photos.s3.amazonaws.com/berkeley-1280.webp 1280w, https://sahilchinoy-photos.s3.amazonaws.com/berkeley-2800.webp 2800w, https://sahilchinoy-photos.s3.amazonaws.com/berkeley-640.webp 640w" type="image/webp">
-                <source srcset="https://sahilchinoy-photos.s3.amazonaws.com/berkeley-1280.jpg 1280w, https://sahilchinoy-photos.s3.amazonaws.com/berkeley-2800.jpg 2800w, https://sahilchinoy-photos.s3.amazonaws.com/berkeley-640.jpg 640w">
-                <img src="https://yourwebsite.com/path_to_your_image.jpg" alt="Description of image">
+                <img src="https://github.com/aryan-arora-01/aryanarora.github.io/blob/main/IMG_9756.jpeg" alt="Description of image">
             </picture>
         </div>
 
         <div class="intro">
             <p>Welcome! I am a Ph.D. candidate in economics at Harvard. My research focuses on the contemporary and 20th-century political economy of the United States.</p>
-            <p>Previously, I was a graphics editor at The New York Times. Before that, I studied physics and economics at UC Berkeley.</p>
-            <p>My email address is <a href="mailto:schinoy@g.harvard.edu">schinoy@g.harvard.edu</a>. I use he/him pronouns.</p>
-        </div>
-    </div>
-</body>
-</html>
+            <p>Previously, I
