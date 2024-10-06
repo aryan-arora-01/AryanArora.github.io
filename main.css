@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+head {
+     max-width: 800px; /* Keeps the content narrow and focused */
+}
+
 body {
     font-family: 'Source Code Pro', monospace; /* Use Source Code Pro for body text */
     background-color: #fefefe; /* Light background */
@@ -13,7 +17,7 @@ body {
     margin: 0;
     padding: 20px;
     font-size: 18px;
-    max-width: 800px; /* Keeps the content narrow and focused */
+    max-width: 1200px; /* Keeps the content narrow and focused */
     margin-left: auto;
     margin-right: auto;
 }
