@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif; /* Use DM Sans for body text */
+    font-family: 'Source Code Pro', monospace; /* Use Source Code Pro for body text */
     background-color: #fefefe; /* Light background */
     color: #333; /* Dark text for contrast */
     line-height: 1.8;
@@ -20,11 +20,11 @@ body {
 
 /* Styling for the title (name) */
 .name {
-    font-family: 'DM Serif Display', serif; /* Use DM Serif Display for the title */
+    font-family: 'Source Code Pro', monospace; /* Keep using Source Code Pro for the title */
     font-size: 48px; /* Larger font size for the title */
     text-align: center; /* Center the title */
     margin-top: 20px;
-    margin-bottom: 20px; /* Space below the title */
+    margin-bottom: 10px; /* Space below the title */
 }
 
 /* Styling for the navigation links below the title */
@@ -36,12 +36,16 @@ body {
 /* Links styling */
 a {
     color: #000; /* Black links */
-    text-decoration: none;
-    border-bottom: 2px solid #000; /* Underline with thicker border */
+    text-decoration: none; /* No underline */
 }
 
 a:hover {
-    border-bottom-color: transparent; /* Hover effect for links */
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+/* Styling for red links */
+.nav a.red {
+    color: red; /* Red color for specific navigation links */
 }
 
 /* Footer section */
@@ -61,15 +65,11 @@ footer {
         font-size: 16px;
     }
 
-    h1 {
-        font-size: 24px;
+    .name {
+        font-size: 36px; /* Adjust title font size for smaller screens */
     }
 
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 18px;
+    .nav a {
+        font-size: 16px; /* Adjust navigation link font size */
     }
 }
