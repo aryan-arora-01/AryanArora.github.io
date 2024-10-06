@@ -1,0 +1,67 @@
+/* General reset for margins, paddings, and borders */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Use a serif font like Georgia */
+    background-color: #fefefe; /* Light background */
+    color: #333; /* Dark text for contrast */
+    line-height: 1.8;
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    max-width: 800px; /* Keeps the content narrow and focused */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for the main headers */
+h1, h2, h3 {
+    font-weight: normal; /* Keep a clean, minimalistic look */
+    margin: 20px 0;
+    color: #000; /* Black header text */
+}
+
+/* Links styling */
+a {
+    color: #000; /* Black links */
+    text-decoration: none;
+    border-bottom: 2px solid #000; /* Underline with thicker border */
+}
+
+a:hover {
+    border-bottom-color: transparent; /* Hover effect for links */
+}
+
+/* Footer section */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd; /* Subtle border on the top */
+    text-align: center;
+    font-size: 14px;
+    color: #666; /* Lighter gray for footer */
+}
+
+/* Responsive Design - mobile adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
