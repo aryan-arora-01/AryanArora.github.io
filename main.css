@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-head {
-     max-width: 800px; /* Keeps the content narrow and focused */
-}
 
 body {
     font-family: 'Source Code Pro', monospace; /* Use Source Code Pro for body text */
