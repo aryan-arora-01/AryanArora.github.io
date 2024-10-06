@@ -16,16 +16,12 @@
     <style type="text/css">
         body {
             font-family: 'Source Code Pro', monospace; /* Set to Source Code Pro */
-            margin: 0;
-            padding: 20px;
-            display: flex; /* Use flexbox for layout */
-            flex-direction: column; /* Stack items vertically */
-            align-items: center; /* Center items horizontally */
         }
         .name {
+            font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
             font-size: 48px;
             text-align: center; /* Center the title */
-            margin: 20px 0; /* Add margin to top and bottom */
+            margin-top: 20px;
         }
         .nav {
             text-align: center; /* Center the navigation */
@@ -37,25 +33,29 @@
         .nav a.red {
             color: red; /* Set color to red for specific links */
         }
-        .content-container {
-            display: flex; /* Flexbox for content alignment */
-            justify-content: center; /* Center the content horizontally */
+        .container {
+            display: flex; /* Use flexbox for layout */
             align-items: flex-start; /* Align items at the start vertically */
-            margin-top: 20px; /* Add space above the content */
+            margin-bottom: 30px;
+            flex-direction: column; /* Stack items vertically in this container */
         }
         .picture-container {
-            margin-right: 20px; /* Space between image and text */
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            margin-bottom: 30px; /* Space below the image */
         }
         img {
             max-width: 400px;
             display: block; /* Ensures that the image behaves as a block element */
+            margin: 0 auto; /* Center the image */
         }
         .intro {
-            max-width: 800px; /* Increase the width of the text */
-            text-align: justify; /* Justify the text */
+            max-width: 1600px; /* Increase the paragraph width */
+            margin: 0 auto; /* Center the intro text block */
         }
         .intro p {
-            margin-bottom: 20px; /* Space between paragraphs */
+            text-align: justify; /* Justify the text */
+            font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
         }
     </style>
 </head>
@@ -70,7 +70,7 @@
         </p>
     </div>
 
-    <div class="content-container">
+    <div class="container">
         <div class="picture-container">
             <picture>
                 <img src="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/IMG_9756.jpeg" alt="Description of image">
