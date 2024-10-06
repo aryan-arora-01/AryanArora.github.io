@@ -39,19 +39,24 @@
             margin-bottom: 30px;
             flex-direction: column; /* Stack items vertically in this container */
         }
+        .title-container {
+            text-align: center; /* Center the titles */
+            margin-bottom: 20px; /* Space below the titles */
+        }
+        .content-container {
+            display: flex; /* Flexbox for content alignment */
+            justify-content: center; /* Center the content horizontally */
+            align-items: flex-start; /* Align items at the start vertically */
+        }
         .picture-container {
-            display: flex;
-            justify-content: center; /* Center the image horizontally */
-            margin-bottom: 30px; /* Space below the image */
+            margin-right: 20px; /* Space between image and text */
         }
         img {
             max-width: 400px;
             display: block; /* Ensures that the image behaves as a block element */
-            margin: 0 auto; /* Center the image */
         }
         .intro {
-            max-width: 1600px; /* Increase the paragraph width */
-            margin: 0 auto; /* Center the intro text block */
+            max-width: 600px; /* Set a reasonable width for the text */
         }
         .intro p {
             text-align: justify; /* Justify the text */
@@ -62,15 +67,17 @@
 
 <body>
     <div class="container">
-        <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
-        <p class="nav">
-            <a class="red" href="https://sahilchinoy.com/research">Research</a> / 
-            <a class="red" href="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/CV.pdf" target="_blank">CV</a> /
-            <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
-        </p>
+        <div class="title-container">
+            <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
+            <p class="nav">
+                <a class="red" href="https://sahilchinoy.com/research">Research</a> / 
+                <a class="red" href="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/CV.pdf" target="_blank">CV</a> /
+                <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
+            </p>
+        </div>
     </div>
 
-    <div class="container">
+    <div class="content-container">
         <div class="picture-container">
             <picture>
                 <img src="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/IMG_9756.jpeg" alt="Description of image">
