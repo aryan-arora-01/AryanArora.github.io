@@ -33,16 +33,21 @@
         .nav a.red {
             color: red; /* Set color to red for specific links */
         }
-        .picture-container {
-            display: flex;
-            justify-content: center; /* Center the flex items */
-            align-items: center; /* Center vertically (if needed) */
+        .container {
+            display: flex; /* Use flexbox for layout */
+            align-items: flex-start; /* Align items at the start vertically */
             margin-bottom: 30px;
+        }
+        .picture-container {
+            margin-right: 20px; /* Add some space between the image and text */
         }
         img {
             max-width: 400px;
             display: block; /* Ensures that the image behaves as a block element */
             margin: 0 auto; /* Center the image */
+        }
+        .intro {
+            max-width: 600px; /* Optional: limit the width of the text section */
         }
         .intro p {
             text-align: justify;
@@ -53,28 +58,26 @@
 
 <body>
     <div class="container">
-        <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
-        <p class="nav">
-            <a class="red" href="https://sahilchinoy.com/research">Research</a> / 
-            <a class="red" href="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/CV.pdf" target="_blank">CV</a> /
-            <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
-        </p>
-
         <div class="picture-container">
             <picture>
                 <img src="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/IMG_9756.jpeg" alt="Description of image">
             </picture>
         </div>
         
-
         <div class="intro">
-            <p>Welcome! I am <a href="https://tobin.yale.edu/programs/pre-doctoral-fellows-program"> Pre-doctoral Fellow</a> at Yale working for Professors <a href="https://sites.google.com/site/winnielillianvandijk/"> Winnie van Dijk</a> and <a href="https://faculty.chicagobooth.edu/scott-nelson?_gl=1*bwsj6a*_gcl_au*NDYzMTY2ODg2LjE3MjgyMzQ2NTI.*_ga*MTQ4Nzg0MTc5OS4xNzIwMDM1MzIy*_ga_PDRJWHFTEV*MTcyODIzNDY1MS4xMS4wLjE3MjgyMzQ2NTEuNjAuMC4w&_ga=2.218508507.316073853.1728234652-1487841799.1720035322"> Scott Nelson</a> on topics related to low-income housing policies. My Research interests span Labor, Public, Urban Economics, and IO.</p
+            <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
+            <p class="nav">
+                <a class="red" href="https://sahilchinoy.com/research">Research</a> / 
+                <a class="red" href="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/CV.pdf" target="_blank">CV</a> /
+                <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
+            </p>
+            <p>Welcome! I am <a href="https://tobin.yale.edu/programs/pre-doctoral-fellows-program">Pre-doctoral Fellow</a> at Yale working for Professors <a href="https://sites.google.com/site/winnielillianvandijk/">Winnie van Dijk</a> and <a href="https://faculty.chicagobooth.edu/scott-nelson?_gl=1*bwsj6a*_gcl_au*NDYzMTY2ODg2LjE3MjgyMzQ2NTI.*_ga*MTQ4Nzg0MTc5OS4xNzIwMDM1MzIy*_ga_PDRJWHFTEV*MTcyODIzNDY1MS4xMS4wLjE3MjgyMzQ2NTEuNjAuMC4w&_ga=2.218508507.316073853.1728234652-1487841799.1720035322">Scott Nelson</a> on topics related to low-income housing policies. My research interests span Labor, Public, Urban Economics, and IO.</p>
             <hr style="border: none;">
             <p>Previously I worked for <a href="https://haas.berkeley.edu/faculty/moore-don/">Professor Don Moore</a> at UC Berkeley and <a href="https://sites.google.com/site/davidwiczer/">Dr. David Wiczer</a> at the Federal Reserve Bank of Atlanta. I also had brief stints at the Federal Reserve Bank of Boston, the Business for a Better World Center at George Mason University, and the Center for Emotional Intelligence at Yale.</p>
             <hr style="border: none;">
-            <p>I received my undergraduate degree in Mathematics and Economics from <a href="https://www.carleton.edu/"> Carleton College</a>.</p>
+            <p>I received my undergraduate degree in Mathematics and Economics from <a href="https://www.carleton.edu/">Carleton College</a>.</p>
             <hr style="border: none;">
-            <p>I also lead the <a class = "https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Yale Predoc Reading Group</a>. My email address is <a href="mailto:aryan.arora@yale.edu">aryan.arora@yale.edu</a>.</p>
+            <p>I also lead the <a href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Yale Predoc Reading Group</a>. My email address is <a href="mailto:aryan.arora@yale.edu">aryan.arora@yale.edu</a>.</p>
         </div>
     </div>
 </body>
