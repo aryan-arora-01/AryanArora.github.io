@@ -36,13 +36,16 @@
         .container {
             display: flex; /* Use flexbox for layout */
             align-items: flex-start; /* Align items at the start vertically */
-            margin-bottom: 30px;
             flex-direction: column; /* Stack items vertically in this container */
+            margin-bottom: 30px;
+        }
+        .content-container {
+            display: flex; /* Use flexbox for content alignment */
+            justify-content: flex-start; /* Align items to the start horizontally */
+            align-items: flex-start; /* Align items at the start vertically */
         }
         .picture-container {
-            display: flex;
-            justify-content: center; /* Center the image horizontally */
-            margin-bottom: 30px; /* Space below the image */
+            margin-right: 20px; /* Space between image and text */
         }
         img {
             max-width: 400px;
@@ -50,15 +53,16 @@
             margin: 0 auto; /* Center the image */
         }
         .intro {
-            max-width: 1600px; /* Increase the paragraph width */
-            margin: 0 auto; /* Center the intro text block */
+            max-width: 600px; /* Set a reasonable width for the text */
         }
         .intro p {
             text-align: justify; /* Justify the text */
             font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
         }
     </style>
+</head>
 
+<body>
     <div class="container">
         <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
         <p class="nav">
@@ -67,9 +71,8 @@
             <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
         </p>
     </div>
-</head>
 
-<body>
+    <div class="content-container">
         <div class="picture-container">
             <picture>
                 <img src="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/IMG_9756.jpeg" alt="Description of image">
@@ -85,5 +88,6 @@
             <hr style="border: none;">
             <p>I also lead the <a href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Yale Predoc Reading Group</a>. My email address is <a href="mailto:aryan.arora@yale.edu">aryan.arora@yale.edu</a>.</p>
         </div>
+    </div>
 </body>
 </html>
