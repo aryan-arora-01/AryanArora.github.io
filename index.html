@@ -20,11 +20,11 @@
         .name {
             font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
             font-size: 48px;
-            text-align: center;
+            text-align: center; /* Center the title */
             margin-top: 20px;
         }
         .nav {
-            text-align: center;
+            text-align: center; /* Center the navigation */
             margin-bottom: 30px;
         }
         .nav a {
@@ -37,9 +37,12 @@
             display: flex; /* Use flexbox for layout */
             align-items: flex-start; /* Align items at the start vertically */
             margin-bottom: 30px;
+            flex-direction: column; /* Stack items vertically in this container */
         }
         .picture-container {
-            margin-right: 20px; /* Add some space between the image and text */
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            margin-bottom: 30px; /* Space below the image */
         }
         img {
             max-width: 400px;
@@ -47,10 +50,11 @@
             margin: 0 auto; /* Center the image */
         }
         .intro {
-            max-width: 1200px; /* Set the paragraph width to twice its original width */
+            max-width: 1600px; /* Increase the paragraph width */
+            margin: 0 auto; /* Center the intro text block */
         }
         .intro p {
-            text-align: justify;
+            text-align: justify; /* Justify the text */
             font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
         }
     </style>
@@ -58,14 +62,12 @@
 
 <body>
     <div class="container">
-        <div class="title">
-            <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
-            <p class="nav">
-                <a class="red" href="https://sahilchinoy.com/research">Research</a> / 
-                <a class="red" href="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/CV.pdf" target="_blank">CV</a> /
-                <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
-            </p>
-        </div>
+        <p class="name"><a href="https://aryan-arora-01.github.io/aryanarora.github.io/">Aryan Arora</a></p>
+        <p class="nav">
+            <a class="red" href="https://sahilchinoy.com/research">Research</a> / 
+            <a class="red" href="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/CV.pdf" target="_blank">CV</a> /
+            <a class="red" href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Reading Group</a>
+        </p>
     </div>
 
     <div class="container">
