@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Use a serif font like Georgia */
+    font-family: 'DM Sans', sans-serif; /* Use DM Sans for body text */
     background-color: #fefefe; /* Light background */
     color: #333; /* Dark text for contrast */
     line-height: 1.8;
@@ -18,11 +18,19 @@ body {
     margin-right: auto;
 }
 
-/* Styling for the main headers */
-h1, h2, h3 {
-    font-weight: normal; /* Keep a clean, minimalistic look */
-    margin: 20px 0;
-    color: #000; /* Black header text */
+/* Styling for the title (name) */
+.name {
+    font-family: 'DM Serif Display', serif; /* Use DM Serif Display for the title */
+    font-size: 48px; /* Larger font size for the title */
+    text-align: center; /* Center the title */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Styling for the navigation links below the title */
+.nav {
+    text-align: center; /* Center the navigation */
+    margin-bottom: 30px;
 }
 
 /* Links styling */
