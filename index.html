@@ -15,35 +15,28 @@
 
     <style type="text/css">
         body {
-            font-family: 'Source Code Pro', monospace; /* Set to Source Code Pro */
+            font-family: 'Source Code Pro', monospace;
+            text-align: center; /* Center all text */
         }
         .name {
-            font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
             font-size: 48px;
-            text-align: center; /* Center the title */
             margin-top: 20px;
         }
         .nav {
-            text-align: center; /* Center the navigation */
             margin-bottom: 30px;
         }
         .nav a {
             text-decoration: none; /* Remove underline from links */
+            margin: 0 10px; /* Space between links */
         }
         .nav a.red {
             color: red; /* Set color to red for specific links */
         }
-        .container {
-            display: flex; /* Use flexbox for layout */
-            align-items: flex-start; /* Align items at the start vertically */
-            flex-direction: column; /* Stack items vertically in this container */
-            margin-bottom: 30px;
-            text-align: center; /* Center titles within the container */
-        }
         .content-container {
-            display: flex; /* Use flexbox for content alignment */
-            justify-content: flex-start; /* Align items to the start horizontally */
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center the content */
             align-items: flex-start; /* Align items at the start vertically */
+            margin-bottom: 30px;
         }
         .picture-container {
             margin-right: 20px; /* Space between image and text */
@@ -55,10 +48,14 @@
         }
         .intro {
             max-width: 600px; /* Set a reasonable width for the text */
+            text-align: left; /* Align text left for better readability */
         }
         .intro p {
             text-align: justify; /* Justify the text */
-            font-family: 'Source Code Pro', monospace; /* Apply Source Code Pro */
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px 0; /* Add some padding around footer */
         }
     </style>
 </head>
@@ -75,13 +72,10 @@
 
     <div class="content-container">
         <div class="picture-container">
-            <picture>
-                <img src="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/IMG_9756.jpeg" alt="Description of image">
-            </picture>
+            <img src="https://raw.githubusercontent.com/aryan-arora-01/aryanarora.github.io/main/IMG_9756.jpeg" alt="Description of image">
         </div>
         
         <div class="intro">
-            <br>
             <p>Welcome! I am <a href="https://tobin.yale.edu/programs/pre-doctoral-fellows-program">Pre-doctoral Fellow</a> at Yale working with Professors <a href="https://sites.google.com/site/winnielillianvandijk/">Winnie van Dijk</a> and <a href="https://faculty.chicagobooth.edu/scott-nelson?_gl=1*bwsj6a*_gcl_au*NDYzMTY2ODg2LjE3MjgyMzQ2NTI.*_ga*MTQ4Nzg0MTc5OS4xNzIwMDM1MzIy*_ga_PDRJWHFTEV*MTcyODIzNDY1MS4xMS4wLjE3MjgyMzQ2NTEuNjAuMC4w&_ga=2.218508507.316073853.1728234652-1487841799.1720035322">Scott Nelson</a> on topics related to low-income housing policies. My research interests span Labor, Public, Urban Economics, and IO.</p>
             <br>
             <p>Previously I worked for <a href="https://haas.berkeley.edu/faculty/moore-don/">Professor Don Moore</a> at UC Berkeley and <a href="https://sites.google.com/site/davidwiczer/">Dr. David Wiczer</a> at the Federal Reserve Bank of Atlanta. I also had brief stints at the Federal Reserve Bank of Boston, the Business for a Better World Center at George Mason University, and the Center for Emotional Intelligence at Yale.</p>
@@ -91,8 +85,9 @@
             <p>I also lead the <a href="https://aryan-arora-01.github.io/YaleReadingGroup.github.io/">Yale Predoc Reading Group</a>. My email address is <a href="mailto:aryan.arora@yale.edu">aryan.arora@yale.edu</a>.</p>
         </div>
     </div>
+
+    <footer>
+        <p style="margin: 0;">The theme of this website was inspired by <strong><a href="https://sahilchinoy.com/">Sahil Chinoy</a></strong></p>
+    </footer>
 </body>
-    <footer style="text-align: center; 20px;">
-    <p style="margin: 0;">The theme of this website was inspired by <strong><a href = "https://sahilchinoy.com/">Sahil Chinoy</a></strong></p>
-</footer>
 </html>
