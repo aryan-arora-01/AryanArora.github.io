@@ -14,31 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
 
     <style type="text/css">
-        body {
-            font-family: 'Source Code Pro', monospace;
-            text-align: center; /* Center all text */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-        }
-        .name {
-            font-size: 48px;
-            margin-top: 20px;
-        }
-        .nav {
-            margin-bottom: 30px;
-        }
-        .nav a {
-            text-decoration: none; /* Remove underline from links */
-            margin: 0 10px; /* Space between links */
-        }
-        .nav a.red {
-            color: red; /* Set color to red for specific links */
-        }
         .content-container {
             display: flex; /* Use flexbox for layout */
             justify-content: center; /* Center the content */
             align-items: flex-start; /* Align items at the start vertically */
             margin-bottom: 30px;
+            width: 100%; /* Ensure it uses full width of the parent */
             flex-wrap: wrap; /* Allow items to wrap if needed */
         }
         .picture-container {
@@ -52,13 +33,6 @@
         .intro {
             max-width: 600px; /* Set a reasonable width for the text */
             text-align: left; /* Align text left for better readability */
-        }
-        .intro p {
-            text-align: justify; /* Justify the text */
-        }
-        footer {
-            margin-top: 20px;
-            padding: 20px 0; /* Add some padding around footer */
         }
     </style>
 </head>
